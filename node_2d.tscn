@@ -56,26 +56,26 @@ offset_bottom = 234.0
 
 [node name="btncalc" type="Button" parent="."]
 layout_mode = 0
-offset_left = 22.0
-offset_top = 457.0
-offset_right = 244.0
-offset_bottom = 583.0
+offset_left = 67.0
+offset_top = 462.0
+offset_right = 289.0
+offset_bottom = 588.0
 text = "calculate"
 
 [node name="btnclear" type="Button" parent="."]
 layout_mode = 0
-offset_left = 430.0
-offset_top = 464.0
-offset_right = 652.0
-offset_bottom = 590.0
+offset_left = 473.0
+offset_top = 461.0
+offset_right = 695.0
+offset_bottom = 587.0
 text = "clear"
 
 [node name="btnexit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 845.0
-offset_top = 455.0
-offset_right = 1067.0
-offset_bottom = 581.0
+offset_left = 837.0
+offset_top = 460.0
+offset_right = 1059.0
+offset_bottom = 586.0
 text = "exit"
 
 [connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]
