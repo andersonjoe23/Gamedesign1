@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://ele7lj7hups4"]
+
+[ext_resource type="Script" path="res://Button2.gd" id="1_olxua"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_14kab"]
+font_size = 28
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 43.0
+offset_right = 880.0
+offset_bottom = 269.0
+label_settings = SubResource("LabelSettings_14kab")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 285.0
+offset_right = 748.0
+offset_bottom = 368.0
+text = "show"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 410.0
+offset_right = 748.0
+offset_bottom = 493.0
+text = "clear"
+script = ExtResource("1_olxua")
+
+[connection signal="pressed" from="Button" to="Button2" method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

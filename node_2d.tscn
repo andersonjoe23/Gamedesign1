@@ -1,0 +1,83 @@
+[gd_scene load_steps=3 format=3 uid="uid://quvex84tti0t"]
+
+[ext_resource type="Script" path="res://prog_82a.gd" id="1_vbnm7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kmdeh"]
+font_size = 32
+
+[node name="prog_82a" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vbnm7")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 18.0
+offset_right = 452.0
+offset_bottom = 90.0
+text = "Enter the speed limit:"
+label_settings = SubResource("LabelSettings_kmdeh")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 149.0
+offset_right = 452.0
+offset_bottom = 221.0
+text = "Enter the vehikle speed:"
+label_settings = SubResource("LabelSettings_kmdeh")
+
+[node name="lblout" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 233.0
+offset_right = 1149.0
+offset_bottom = 429.0
+label_settings = SubResource("LabelSettings_kmdeh")
+
+[node name="txt_limit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 27.0
+offset_right = 946.0
+offset_bottom = 110.0
+
+[node name="txt_speed" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 141.0
+offset_right = 935.0
+offset_bottom = 234.0
+
+[node name="btncalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 457.0
+offset_right = 244.0
+offset_bottom = 583.0
+text = "calculate"
+
+[node name="btnclear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 464.0
+offset_right = 652.0
+offset_bottom = 590.0
+text = "clear"
+
+[node name="btnexit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 845.0
+offset_top = 455.0
+offset_right = 1067.0
+offset_bottom = 581.0
+text = "exit"
+
+[connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]
+[connection signal="pressed" from="btnclear" to="." method="_on_btnclear_pressed"]
+[connection signal="pressed" from="btnexit" to="." method="_on_btnexit_pressed"]
