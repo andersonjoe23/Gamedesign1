@@ -1,16 +1,87 @@
-[gd_scene format=3 uid="uid://b5rnu7am5j5i3"]
+[gd_scene load_steps=4 format=3 uid="uid://b5rnu7am5j5i3"]
 
-[node name="compsci" type="Control"]
+[ext_resource type="Script" path="res://compsci.gd" id="1_fnxrs"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_d7dlh"]
+font_size = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_cl1ij"]
+font_size = 25
+
+[node name="prog 88a" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -3.0
+offset_right = -3.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_fnxrs")
 
-[node name="Button" type="Button" parent="."]
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 22.0
+offset_right = 233.0
+offset_bottom = 80.0
+text = "Enter num 1:"
+label_settings = SubResource("LabelSettings_d7dlh")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 156.0
+offset_right = 328.0
+offset_bottom = 214.0
+text = "Enter num 2:"
+label_settings = SubResource("LabelSettings_cl1ij")
+
+[node name="lblout" type="Label" parent="."]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 285.0
+offset_right = 951.0
+offset_bottom = 631.0
+
+[node name="txtnum1" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 26.0
+offset_right = 766.0
+offset_bottom = 107.0
+
+[node name="txtnum2" type="LineEdit" parent="."]
 layout_mode = 0
 offset_left = 328.0
-offset_top = 413.0
-offset_right = 847.0
-offset_bottom = 533.0
+offset_top = 171.0
+offset_right = 718.0
+offset_bottom = 241.0
+
+[node name="btncalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 41.0
+offset_right = 1135.0
+offset_bottom = 108.0
+text = "calculate"
+
+[node name="btnclear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 318.0
+offset_right = 1127.0
+offset_bottom = 385.0
+text = "clear"
+
+[node name="btnexit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 981.0
+offset_top = 508.0
+offset_right = 1116.0
+offset_bottom = 575.0
+text = "exit"
+
+[connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]
