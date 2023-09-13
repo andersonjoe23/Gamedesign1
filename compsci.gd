@@ -29,14 +29,14 @@ func _on_btncalc_pressed():
 	else: # otherwise
 		Max = num2
 	
-	if max == num1
-		min = num2
+	if Max == num1:
+		Min = num2
 	else:
 		Min = num2
 	
-	$lblout.text = "sum = " + str(sum) + \
-					"\ndiifference = " + str(Diff) + \
-					"\nabs. distance = " + str(abs) + \
-					"\nmax. = " + str(max) + \
-					"\nmin. = " + str(min)
+	$lblout.text = "sum = " + str(Sum) + \
+				   "\ndiifference = " + str(Diff) + \
+				   "\nabs. distance = " + str(Abs) + \
+				   "\nmax. = " + str(Max) + \
+				   "\nmin. = " + str(Min)
 	pass # Replace with function body.
