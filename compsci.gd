@@ -31,7 +31,7 @@ func _on_btncalc_pressed():
 	
 	if Max == num1:
 		Min = num2
-	else:
+
 		Min = num2
 	
 	$lblout.text = "sum = " + str(Sum) + \
