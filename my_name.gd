@@ -12,7 +12,7 @@ func _process(delta):
 
 
 func _on_button_pressed():
-	$Label.text = "My favorite club Mincraft"
+	$Label.text = "My favorite club is Mincraft"
 
 
 func _on_button_2_pressed():
