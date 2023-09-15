@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://ejgwvrfixk1u"]
+
+[ext_resource type="Script" path="res://Control.gd" id="1_1y2bq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sk45r"]
+font_size = 28
+
+[node name="prog 58b" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1y2bq")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 41.0
+offset_right = 293.0
+offset_bottom = 102.0
+text = "Enter numbers hear"
+label_settings = SubResource("LabelSettings_sk45r")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 167.0
+offset_right = 759.0
+offset_bottom = 442.0
+label_settings = SubResource("LabelSettings_sk45r")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 351.0
+offset_top = 43.0
+offset_right = 744.0
+offset_bottom = 103.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 499.0
+offset_right = 933.0
+offset_bottom = 590.0
+text = "Exit"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 377.0
+offset_top = 502.0
+offset_right = 586.0
+offset_bottom = 581.0
+text = "Clear"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 502.0
+offset_right = 255.0
+offset_bottom = 593.0
+text = "Calculate"
