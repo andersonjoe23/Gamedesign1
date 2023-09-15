@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://byiq5p2u8auli"]
+
+[ext_resource type="Script" path="res://Prog93.gd" id="1_d7buh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qi7ww"]
+font_size = 40
+
+[node name="Prog 93a" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d7buh")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 218.0
+offset_bottom = 86.0
+text = "Enter Here"
+label_settings = SubResource("LabelSettings_qi7ww")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 100.0
+offset_right = 991.0
+offset_bottom = 522.0
+label_settings = SubResource("LabelSettings_qi7ww")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 8.0
+offset_right = 756.0
+offset_bottom = 68.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 541.0
+offset_right = 231.0
+offset_bottom = 608.0
+text = "Calculate"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 419.0
+offset_top = 546.0
+offset_right = 550.0
+offset_bottom = 613.0
+text = "Clear"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 708.0
+offset_top = 541.0
+offset_right = 839.0
+offset_bottom = 608.0
+text = "Exit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

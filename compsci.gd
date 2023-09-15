@@ -11,10 +11,6 @@ func _process(delta):
 	pass
 
 
-
-
-
-
 func _on_btncalc_pressed():
 	var num1 = int($txtnum1.text)
 	var num2 = int ($txtnum2.text)
