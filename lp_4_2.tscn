@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvg0y0scxdw3e"]
+
+[ext_resource type="Script" path="res://lp4-2.gd" id="1_gyfdb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_et0s6"]
+font_size = 30
+
+[node name="lp4-2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gyfdb")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 38.0
+offset_right = 413.0
+offset_bottom = 99.0
+text = "Enter number of  packages"
+label_settings = SubResource("LabelSettings_et0s6")
+
+[node name="lblout" type="Label" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 131.0
+offset_right = 1067.0
+offset_bottom = 440.0
+label_settings = SubResource("LabelSettings_et0s6")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 455.0
+offset_top = 34.0
+offset_right = 659.0
+offset_bottom = 103.0
+
+[node name="btncalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 518.0
+offset_right = 288.0
+offset_bottom = 599.0
+text = "calculate"
+
+[node name="btnclear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 439.0
+offset_top = 509.0
+offset_right = 654.0
+offset_bottom = 599.0
+text = "clear"
+
+[node name="btnexit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 844.0
+offset_top = 522.0
+offset_right = 1057.0
+offset_bottom = 618.0
+text = "exit"
+
+[connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]
+[connection signal="pressed" from="btnclear" to="." method="_on_btnclear_pressed"]
+[connection signal="pressed" from="btnexit" to="." method="_on_btnexit_pressed"]

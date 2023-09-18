@@ -13,7 +13,6 @@ func _process(delta):
 
 func _on_btncalc_pressed():
 	var copies = int ($txtcopies.text)
-	var = 0.0
 	var price = 0.0
 	var cost =0.0
 	if copies > 0 and copies <= 99;
