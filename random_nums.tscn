@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdlg5gqqtjibc"]
+
+[ext_resource type="Script" path="res://random nums.gd" id="1_yhv1v"]
+
+[node name="random nums" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yhv1v")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 22.0
+offset_right = 1141.0
+offset_bottom = 497.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 724.0
+offset_top = 505.0
+offset_right = 1120.0
+offset_bottom = 602.0
+text = "Calc"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
