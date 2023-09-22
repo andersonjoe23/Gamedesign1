@@ -5,7 +5,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_4cuvi"]
 font_size = 32
 
-[node name="Control" type="Control"]
+[node name="prog 122c" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -38,23 +38,28 @@ offset_top = 13.0
 offset_right = 1023.0
 offset_bottom = 104.0
 
-[node name="Button" type="Button" parent="."]
+[node name="btncalc" type="Button" parent="."]
 layout_mode = 0
-offset_left = 29.0
-offset_top = 540.0
-offset_right = 279.0
-offset_bottom = 637.0
+offset_left = 42.0
+offset_top = 508.0
+offset_right = 292.0
+offset_bottom = 605.0
+text = "Calculate"
 
-[node name="Button2" type="Button" parent="."]
+[node name="btnclear" type="Button" parent="."]
 layout_mode = 0
 offset_left = 447.0
 offset_top = 510.0
 offset_right = 707.0
 offset_bottom = 603.0
+text = "Clear"
 
-[node name="Button3" type="Button" parent="."]
+[node name="btnexit" type="Button" parent="."]
 layout_mode = 0
 offset_left = 829.0
 offset_top = 506.0
 offset_right = 1074.0
 offset_bottom = 600.0
+text = "Exit"
+
+[connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]

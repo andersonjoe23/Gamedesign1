@@ -15,7 +15,6 @@ func _on_btncalc_pressed():
 	var eggs = int($txteggs.text)
 	var dozons = floor (eggs/12)
 	var remainder = eggs % 12
-	
 	pass # Replace with function body.
 
 
