@@ -9,3 +9,19 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_btncalc_pressed():
+	$itemlist.add_item("number")
+	for num in range(2,36+1,2):
+		var line ="%d" % num
+		$itemlist.add_item(line)
+	
+	
+	
+	
+	
+
+
+func _on_btnclear_pressed():
+	$Itemlist.Clear()
