@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cnjtqnj2nk02p"]
+[gd_scene load_steps=2 format=3 uid="uid://dse1u87q51xl0"]
 
-[ext_resource type="Script" path="res://prog 122b.gd" id="1_q7iv2"]
+[ext_resource type="Script" path="res://prog 122a.gd" id="1_3qf6a"]
 
 [node name="prog 122a" type="Control"]
 layout_mode = 3
@@ -9,35 +9,35 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_q7iv2")
+script = ExtResource("1_3qf6a")
 
 [node name="ItemList" type="ItemList" parent="."]
 layout_mode = 0
-offset_right = 1153.0
-offset_bottom = 503.0
+offset_right = 1158.0
+offset_bottom = 433.0
 
 [node name="btncalc" type="Button" parent="."]
 layout_mode = 0
-offset_left = 61.0
-offset_top = 550.0
+offset_left = 38.0
+offset_top = 499.0
 offset_right = 285.0
-offset_bottom = 631.0
+offset_bottom = 599.0
 text = "Calculate"
 
 [node name="btnclear" type="Button" parent="."]
 layout_mode = 0
-offset_left = 463.0
-offset_top = 546.0
-offset_right = 687.0
-offset_bottom = 627.0
+offset_left = 429.0
+offset_top = 515.0
+offset_right = 676.0
+offset_bottom = 615.0
 text = "Clear"
 
 [node name="btnexit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 875.0
-offset_top = 547.0
-offset_right = 1099.0
-offset_bottom = 628.0
+offset_left = 838.0
+offset_top = 521.0
+offset_right = 1085.0
+offset_bottom = 621.0
 text = "Exit"
 
 [connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]

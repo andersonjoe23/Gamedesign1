@@ -12,22 +12,17 @@ func _process(delta):
 
 
 func _on_btncalc_pressed():
-	$itemlist.add_item("number    square     square root")
+	$itemlist.add_item("number     square     square root")
 	for num in range(1, 51):
-		var numsquared = num**2
-		var numsqrt = sqrt(num)
-		var line = "%d     %d    %.4f" % [num, numsquared, numsqrt]
-		$itemlist.add_item(line)
-	
+	var numsquared = num**2
+	var numsqrt = sqrt(num)
+var line = "%d        %D        %4.f" % [num, numsquared]
+	$itemlist.add_item(item)
+
+
 func _on_btnclear_pressed():
-	$Itemlist.Clear()
-	
-	
-	
-	
+	$itemlist.clear()
 
 
 func _on_btnexit_pressed():
 	pass # Replace with function body.
-	
-	
