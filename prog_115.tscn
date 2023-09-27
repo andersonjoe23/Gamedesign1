@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://wm6x5rm278v3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k6u74"]
+font_size = 35
+
+[node name="prog 115" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 24.0
+offset_right = 334.0
+offset_bottom = 81.0
+text = "Enter labels here"
+label_settings = SubResource("LabelSettings_k6u74")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 26.0
+offset_right = 621.0
+offset_bottom = 113.0
