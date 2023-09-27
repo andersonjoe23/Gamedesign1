@@ -15,8 +15,8 @@ func _on_lblcalc_pressed():
 	var A = int($txta.text)
 	var B = int($txtb.text)
 	var C = int($txtc.text)
-	var proot = (-8 + sqct(8**2 - 4* A * C)) / 2 *A
-	var nroot = ()
+	var proot = (-B + sqrt(B**2 - 4* A * C)) / 2 *A
+	var nroot = (-B - sqrt(B**2 - 4 * A * C)) / 2* A
 	$lblout.text = "roots are %D and %d" % [proot,nroot]
 	
 	
