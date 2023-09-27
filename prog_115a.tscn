@@ -26,7 +26,7 @@ offset_right = 319.0
 offset_bottom = 597.0
 text = "calculate"
 
-[node name="Button3" type="Button" parent="."]
+[node name="btnexit" type="Button" parent="."]
 layout_mode = 0
 offset_left = 421.0
 offset_top = 512.0

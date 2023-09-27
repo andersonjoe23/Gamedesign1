@@ -1,15 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://wm6x5rm278v3"]
+[gd_scene load_steps=3 format=3 uid="uid://wm6x5rm278v3"]
+
+[ext_resource type="Script" path="res://prog_115.gd" id="1_f7siv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_k6u74"]
 font_size = 35
 
-[node name="prog 115" type="Control"]
+[node name="prog 115b" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_f7siv")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -26,3 +27,36 @@ offset_left = 410.0
 offset_top = 26.0
 offset_right = 621.0
 offset_bottom = 113.0
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_top = 153.0
+offset_right = 897.0
+offset_bottom = 351.0
+
+[node name="btncalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 502.0
+offset_right = 234.0
+offset_bottom = 595.0
+text = "Calculate"
+
+[node name="btnclear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 487.0
+offset_right = 639.0
+offset_bottom = 585.0
+text = "Clear"
+
+[node name="btnexit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 805.0
+offset_top = 495.0
+offset_right = 1036.0
+offset_bottom = 592.0
+text = "Exit"
+
+[connection signal="pressed" from="btncalc" to="." method="_on_btncalc_pressed"]
+[connection signal="pressed" from="btnclear" to="." method="_on_btnclear_pressed"]
