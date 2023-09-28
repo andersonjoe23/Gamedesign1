@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dpqrv5th85eak"]
+
+[node name="prog122c" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 0
+offset_right = 1146.0
+offset_bottom = 346.0
+
+[node name="btncalc" type="Button" parent="."]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 497.0
+offset_right = 294.0
+offset_bottom = 582.0
+text = "Calculate"
+
+[node name="btnclear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 499.0
+offset_top = 489.0
+offset_right = 684.0
+offset_bottom = 575.0
+text = "Clear"
+
+[node name="btnexit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 882.0
+offset_top = 501.0
+offset_right = 1061.0
+offset_bottom = 587.0
+text = "Exit"
