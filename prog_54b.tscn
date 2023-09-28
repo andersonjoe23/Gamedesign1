@@ -1,9 +1,62 @@
-[gd_scene format=3 uid="uid://bcli77hg38kiq"]
+[gd_scene load_steps=3 format=3 uid="uid://bcli77hg38kiq"]
+
+[ext_resource type="Script" path="res://prog_54b.gd" id="1_aro1m"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0l5tu"]
+font_size = 25
 
 [node name="prog 54b" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+offset_top = -2.0
+offset_right = 1152.0
+offset_bottom = 646.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_aro1m")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 9.0
+offset_right = 277.0
+offset_bottom = 47.0
+text = "Enter numbers here"
+label_settings = SubResource("LabelSettings_0l5tu")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 15.0
+offset_right = 599.0
+offset_bottom = 68.0
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 166.0
+offset_right = 1120.0
+offset_bottom = 369.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 492.0
+offset_right = 281.0
+offset_bottom = 586.0
+text = "Calculate"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 406.0
+offset_top = 506.0
+offset_right = 614.0
+offset_bottom = 591.0
+text = "Clear"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 755.0
+offset_top = 504.0
+offset_right = 989.0
+offset_bottom = 595.0
+text = "Exit"
