@@ -7,11 +7,10 @@ font_size = 25
 
 [node name="prog 54b" type="Control"]
 layout_mode = 3
-offset_top = -2.0
+anchors_preset = 0
+offset_top = 3.0
 offset_right = 1152.0
-offset_bottom = 646.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_bottom = 651.0
 script = ExtResource("1_aro1m")
 
 [node name="Label" type="Label" parent="."]
