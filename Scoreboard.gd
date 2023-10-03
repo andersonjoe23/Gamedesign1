@@ -18,8 +18,8 @@ func _on_btn_update_pressed():
 	else:
 		OS.alert("invalid choice!")
 	update()
-		
-		
+	
+	
 	
 func _on_btnreset_pressed():
 	reset()

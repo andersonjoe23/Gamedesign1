@@ -1,0 +1,121 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwicxce8qn22l"]
+
+[ext_resource type="Script" path="res://calculater.gd" id="1_ejw2e"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2qa5r"]
+font_size = 23
+
+[sub_resource type="LabelSettings" id="LabelSettings_tl7w0"]
+font_size = 23
+
+[node name="Calculater" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ejw2e")
+
+[node name="btnexit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 839.0
+offset_top = 547.0
+offset_right = 1026.0
+offset_bottom = 626.0
+text = "Exit"
+
+[node name="btnclear" type="Button" parent="."]
+layout_mode = 0
+offset_left = 844.0
+offset_top = 442.0
+offset_right = 1022.0
+offset_bottom = 526.0
+text = "Clear"
+
+[node name="btnadd" type="Button" parent="."]
+layout_mode = 0
+offset_left = 948.0
+offset_top = 42.0
+offset_right = 1126.0
+offset_bottom = 126.0
+text = "Add"
+
+[node name="btnsub" type="Button" parent="."]
+layout_mode = 0
+offset_left = 756.0
+offset_top = 45.0
+offset_right = 934.0
+offset_bottom = 129.0
+text = "Sub"
+
+[node name="btndivide" type="Button" parent="."]
+layout_mode = 0
+offset_left = 953.0
+offset_top = 148.0
+offset_right = 1131.0
+offset_bottom = 232.0
+text = "Divide"
+
+[node name="btnmultiply" type="Button" parent="."]
+layout_mode = 0
+offset_left = 758.0
+offset_top = 150.0
+offset_right = 936.0
+offset_bottom = 234.0
+text = "Multi"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 28.0
+offset_right = 124.0
+offset_bottom = 73.0
+text = "Num1"
+label_settings = SubResource("LabelSettings_2qa5r")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 248.0
+offset_right = 147.0
+offset_bottom = 298.0
+text = "Num2"
+label_settings = SubResource("LabelSettings_2qa5r")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 10.0
+offset_right = 383.0
+offset_bottom = 72.0
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 183.0
+offset_top = 226.0
+offset_right = 357.0
+offset_bottom = 288.0
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 126.0
+offset_right = 146.0
+offset_bottom = 175.0
+text = "Operation"
+label_settings = SubResource("LabelSettings_tl7w0")
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 398.0
+offset_right = 175.0
+offset_bottom = 447.0
+text = "Results"
+label_settings = SubResource("LabelSettings_tl7w0")
+
+[connection signal="pressed" from="btnadd" to="." method="_on_btnadd_pressed"]
+[connection signal="pressed" from="btnsub" to="." method="_on_btnsub_pressed"]
+[connection signal="pressed" from="btndivide" to="." method="_on_btndivide_pressed"]
+[connection signal="pressed" from="btnmultiply" to="." method="_on_btnmultiply_pressed"]
