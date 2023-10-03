@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnvyokhut14s4"]
+
+[ext_resource type="Script" path="res://Scoreboard.gd" id="1_hxvre"]
+
+[node name="Scoreboard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hxvre")
+
+[node name="lblout" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1135.0
+offset_bottom = 286.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 320.0
+offset_right = 675.0
+offset_bottom = 387.0
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 321.0
+offset_right = 357.0
+offset_bottom = 390.0
+text = "Modify point (add,sub)"
+
+[node name="btn update" type="Button" parent="."]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 534.0
+offset_right = 248.0
+offset_bottom = 592.0
+text = "update"
+
+[node name="btnreset" type="Button" parent="."]
+layout_mode = 0
+offset_left = 864.0
+offset_top = 540.0
+offset_right = 1089.0
+offset_bottom = 609.0
+text = "Reset"
+
+[connection signal="pressed" from="btn update" to="." method="_on_btn_update_pressed"]
+[connection signal="pressed" from="btnreset" to="." method="_on_btnreset_pressed"]
