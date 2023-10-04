@@ -1,16 +1,21 @@
 
+	
+func myPow(Num1, Num2):
+	
+func myMod(Num1, Num2):
+
 
 func _on_btnadd_pressed():
-	pass # Replace with function body.
+	func myAdd(Num1, Num2):
 
 
 func _on_btnsub_pressed():
-	pass # Replace with function body.
+	func mySub(Num1, Num2):
 
 
 func _on_btndivide_pressed():
-	pass # Replace with function body.
+	func myDiv(Num1, Num2):
 
 
 func _on_btnmultiply_pressed():
-	pass # Replace with function body.
+	func myMul(Num1, Num2):

@@ -85,17 +85,17 @@ label_settings = SubResource("LabelSettings_2qa5r")
 
 [node name="LineEdit" type="LineEdit" parent="."]
 layout_mode = 0
-offset_left = 209.0
-offset_top = 10.0
-offset_right = 383.0
-offset_bottom = 72.0
+offset_left = 211.0
+offset_top = 26.0
+offset_right = 385.0
+offset_bottom = 88.0
 
 [node name="LineEdit2" type="LineEdit" parent="."]
 layout_mode = 0
-offset_left = 183.0
-offset_top = 226.0
-offset_right = 357.0
-offset_bottom = 288.0
+offset_left = 208.0
+offset_top = 244.0
+offset_right = 382.0
+offset_bottom = 306.0
 
 [node name="Label3" type="Label" parent="."]
 layout_mode = 0

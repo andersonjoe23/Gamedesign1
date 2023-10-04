@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhm5t5wqwfugm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_w337u"]
+font_size = 30
+
+[node name="prog54cfunc" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 17.0
+offset_right = 187.0
+offset_bottom = 84.0
+text = "Enter nums"
+label_settings = SubResource("LabelSettings_w337u")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 265.0
+offset_top = 13.0
+offset_right = 432.0
+offset_bottom = 80.0
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 129.0
+offset_right = 1158.0
+offset_bottom = 383.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 549.0
+offset_right = 206.0
+offset_bottom = 610.0
+text = "Calculate"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 548.0
+offset_right = 661.0
+offset_bottom = 601.0
+text = "Clear"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 924.0
+offset_top = 549.0
+offset_right = 1121.0
+offset_bottom = 606.0
+text = "Exit"
