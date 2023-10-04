@@ -12,13 +12,6 @@ func _process(delta):
 
 
 
-
-
-
-
-
-
-
 func _on_btncalc_pressed():
 	pass # Replace with function body.
 
