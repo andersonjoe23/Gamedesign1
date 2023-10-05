@@ -1,19 +1,79 @@
-[gd_scene load_steps=2 format=3 uid="uid://cvg0y0scxdw3e"]
+[gd_scene load_steps=3 format=3 uid="uid://cvg0y0scxdw3e"]
 
 [ext_resource type="Script" path="res://lp 4-2.gd" id="1_w4xuu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_u8wu3"]
+font_size = 25
 
 [node name="lp 4-2" type="Control"]
 layout_mode = 3
 anchor_bottom = 0.002
-offset_left = 7.0
-offset_top = 1.0
-offset_right = 247.0
-offset_bottom = 62.704
+offset_left = -277.0
+offset_top = 363.0
+offset_right = -252.0
+offset_bottom = 380.704
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_w4xuu")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_right = 60.0
-offset_bottom = 23.0
+offset_left = 282.0
+offset_top = -361.0
+offset_right = 533.0
+offset_bottom = -298.0
+text = "Enter numbers here"
+label_settings = SubResource("LabelSettings_u8wu3")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 591.0
+offset_top = -358.0
+offset_right = 836.0
+offset_bottom = -310.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 11.1
+anchor_top = -18.877
+anchor_right = 11.1
+anchor_bottom = -18.877
+offset_left = 128.5
+offset_top = 528.663
+offset_right = 266.5
+offset_bottom = 591.663
+text = "Calculate"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 11.1
+anchor_top = -18.877
+anchor_right = 11.1
+anchor_bottom = -18.877
+offset_left = 514.5
+offset_top = 516.663
+offset_right = 652.5
+offset_bottom = 579.663
+text = "Clear"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 11.1
+anchor_top = -18.877
+anchor_right = 11.1
+anchor_bottom = -18.877
+offset_left = 859.5
+offset_top = 514.663
+offset_right = 997.5
+offset_bottom = 577.663
+text = "Exit"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 278.0
+offset_top = -212.0
+offset_right = 1426.0
+offset_bottom = 125.0
