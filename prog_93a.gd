@@ -13,15 +13,12 @@ func _process(delta):
 
 
 func _on_btncalc_pressed():
-	var "getarea" and "getcircumference"
+	pass # Replace with function body.
 
 
 func _on_btnclear_pressed():
-	var "getarea" and "getcircumference"
+	pass # Replace with function body.
 
 
 func _on_btnexit_pressed():
-	var "getarea" and "getcircumference"
-	
-	
-	
+	pass # Replace with function body.
