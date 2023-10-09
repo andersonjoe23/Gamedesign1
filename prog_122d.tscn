@@ -4,6 +4,7 @@
 
 [node name="prog122d" type="Control"]
 layout_mode = 3
+anchors_preset = 0
 offset_left = -4.0
 offset_top = -5.0
 offset_right = 1152.0
