@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://3rta5reyxe1i"]
+
+[node name="prog122h" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 458.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 522.0
+offset_right = 225.0
+offset_bottom = 585.0
