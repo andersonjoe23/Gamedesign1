@@ -40,6 +40,7 @@ polygon = PackedVector2Array(-19, 11, 19, 156, 57, 174, 122, 159, 187, 150, 237,
 
 [node name="interact" type="RigidBody2D" parent="."]
 position = Vector2(1, 1)
+input_pickable = true
 freeze = true
 
 [node name="Sprite2D" type="Sprite2D" parent="interact"]
