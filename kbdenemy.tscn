@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0hfemrin8r1s"]
+
+[ext_resource type="Script" path="res://kbdenemy.gd" id="1_8cjnv"]
+[ext_resource type="Texture2D" uid="uid://fmj085gtqvlj" path="res://icon.svg" id="2_k36r4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ckdl8"]
+size = Vector2(21, 22.5)
+
+[node name="kbdenemy" type="RigidBody2D"]
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_8cjnv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.164063, 0.171875)
+texture = ExtResource("2_k36r4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.25)
+shape = SubResource("RectangleShape2D_ckdl8")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

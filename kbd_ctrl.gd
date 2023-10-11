@@ -26,10 +26,3 @@ func _process(delta):
 	if dragged():
 		$draggable.global_posstion = get_global_mouse_position() - offset
 
-
-
-
-
-
-
-

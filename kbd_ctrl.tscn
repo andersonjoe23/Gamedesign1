@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7c4jwi2385yy"]
+[gd_scene load_steps=8 format=3 uid="uid://b7c4jwi2385yy"]
 
 [ext_resource type="Script" path="res://kbd_ctrl.gd" id="1_gak2h"]
 [ext_resource type="PackedScene" uid="uid://d03gwwjat0g2n" path="res://kbdplayer.tscn" id="2_awqkd"]
+[ext_resource type="PackedScene" uid="uid://b0hfemrin8r1s" path="res://kbdenemy.tscn" id="3_8vpx1"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_glcqs"]
 a = Vector2(166, 11)
@@ -34,6 +35,7 @@ texture = SubResource("PlaceholderTexture2D_3vggt")
 [node name="world" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world"]
+position = Vector2(8, 128)
 polygon = PackedVector2Array(-19, 11, 19, 156, 57, 174, 122, 159, 187, 150, 237, 172, 250, 199, 282, 206, 358, 190, 425, 165, 495, 210, 513, 275, 562, 284, 688, 188, 737, 159, 789, 177, 789, 253, 816, 302, 913, 325, 969, 289, 1011, 231, 1043, 309, 944, 437, 809, 448, 652, 448, 381, 417, 199, 410, 138, 390, 59, 332, -8, 271, -73, 199, -64, 109)
 
 [node name="Polygon2D" type="Polygon2D" parent="world/CollisionPolygon2D"]
@@ -44,12 +46,12 @@ input_pickable = true
 freeze = true
 
 [node name="Sprite2D" type="Sprite2D" parent="interact"]
-position = Vector2(0.43238, 0.89174)
+position = Vector2(101, 208)
 scale = Vector2(-136.7, 112.609)
 texture = SubResource("PlaceholderTexture2D_dbx17")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interact"]
-position = Vector2(1, 1)
+position = Vector2(102, 210)
 shape = SubResource("RectangleShape2D_707v5")
 
 [node name="draggable" type="RigidBody2D" parent="."]
@@ -65,11 +67,14 @@ position = Vector2(553, 66)
 shape = SubResource("RectangleShape2D_707v5")
 
 [node name="Button" type="Button" parent="draggable"]
-offset_left = -67.0
-offset_top = -54.0
-offset_right = 71.0
-offset_bottom = 59.0
+offset_left = 33.0
+offset_top = 155.0
+offset_right = 171.0
+offset_bottom = 268.0
 focus_mode = 0
+
+[node name="kbdenemy" parent="." instance=ExtResource("3_8vpx1")]
+position = Vector2(299, 298)
 
 [connection signal="mouse_entered" from="interact" to="." method="_on_interact_mouse_entered"]
 [connection signal="button_down" from="draggable/Button" to="." method="_on_button_button_down"]
